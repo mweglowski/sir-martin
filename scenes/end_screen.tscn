@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://da112mu5mncl7"]
+
+[ext_resource type="Script" uid="uid://cs0u8ufbgadon" path="res://scripts/end_screen.gd" id="1_kq7ac"]
+[ext_resource type="FontFile" uid="uid://blyvnu3j6yhh" path="res://assets/fonts/PixelOperator8.ttf" id="2_6e1uj"]
+
+[sub_resource type="Theme" id="Theme_jc7ji"]
+default_font = ExtResource("2_6e1uj")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kq7ac"]
+bg_color = Color(0.17254902, 0.17254902, 0.17254902, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 20.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e1uj"]
+content_margin_top = 12.0
+content_margin_bottom = 12.0
+bg_color = Color(0.14044744, 0.14044747, 0.14044738, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc7ji"]
+content_margin_top = 12.0
+content_margin_bottom = 12.0
+bg_color = Color(0.14117648, 0.14117648, 0.14117648, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="EndScreen" type="CanvasLayer" unique_id=805371099]
+process_mode = 3
+layer = 10
+script = ExtResource("1_kq7ac")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1862143221]
+offset_right = 1153.0
+offset_bottom = 649.0
+color = Color(0.28235295, 0.28235295, 0.28235295, 0.74509805)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1586859988]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -148.0
+offset_top = -56.0
+offset_right = 148.0
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=1694594273]
+layout_mode = 2
+theme = SubResource("Theme_jc7ji")
+theme_override_styles/panel = SubResource("StyleBoxFlat_kq7ac")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer" unique_id=2031966950]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Title" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1859503129]
+layout_mode = 2
+text = "YOU SAVED THE PRINCESS!"
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1279967051]
+layout_mode = 2
+theme_override_constants/margin_top = 16
+
+[node name="TimeResult" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/MarginContainer" unique_id=1999058624]
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1871301617]
+layout_mode = 2
+theme_override_constants/margin_bottom = 16
+
+[node name="DeathResult" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/MarginContainer2" unique_id=434278988]
+layout_mode = 2
+
+[node name="RestartButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1016996005]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_6e1uj")
+text = "Restart"
+
+[node name="MenuButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=145240678]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_jc7ji")
+text = "Main Menu"
+
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/MenuButton" to="." method="_on_menu_button_pressed"]

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dx3bl2kloanea"]
+
+[ext_resource type="Script" uid="uid://bhhhel0xpeuyq" path="res://scripts/magic_wall.gd" id="1_mkkuj"]
+[ext_resource type="Texture2D" uid="uid://b08m3tnten2lk" path="res://assets/sprites/world_tileset.png" id="1_w7uo6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mkkuj"]
+size = Vector2(16, 48)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1733544231]
+script = ExtResource("1_mkkuj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=299467465]
+texture = ExtResource("1_w7uo6")
+region_enabled = true
+region_rect = Rect2(79.82121, 48.056587, 16.497528, 47.82663)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1020021033]
+shape = SubResource("RectangleShape2D_mkkuj")

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://d1c6h7eoilma5"]
+
+[ext_resource type="Script" uid="uid://c2tq7duq1qcok" path="res://scripts/princess.gd" id="1_6t68o"]
+[ext_resource type="Texture2D" uid="uid://bgifs664w2ljg" path="res://assets/sprites/princess.png" id="1_o4716"]
+[ext_resource type="PackedScene" uid="uid://da112mu5mncl7" path="res://scenes/end_screen.tscn" id="2_h8nea"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rl5q2"]
+radius = 7.0
+
+[node name="Princess" type="Area2D" unique_id=1929759475]
+script = ExtResource("1_6t68o")
+end_screen_scene = ExtResource("2_h8nea")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=103642945]
+texture = ExtResource("1_o4716")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=108560578]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_rl5q2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
