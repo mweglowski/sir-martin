@@ -12,7 +12,7 @@ In this challenge-driven platformer, you control a character with a unique **hol
 ---
 
 ## Demo
-[![Watch game demo](assets/video-preview.jpg)](https://youtu.be/IVj-34CuNX4)
+[![Watch game demo](assets/preview.jpg)](https://youtu.be/IVj-34CuNX4)
 
 ---
 
