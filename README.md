@@ -9,13 +9,20 @@ In this challenge-driven platformer, you control a character with a unique **hol
 
 ---
 
+## Demo
+[![Watch game demo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/maxresdefault.jpg)](https://youtu.be/YOUTUBE_VIDEO_ID)
+
+---
+
 ## Key Features
 * **Charge-Jump Physics:** Variable jump heights and distances based on how long you hold the spacebar.
-* **Dynamic Tile Logic:** Navigate different ground types including **Normal** platforms and **Slippery** ice that affects your friction and movement.
+* **Dynamic Tile Logic:** Navigate different ground types including **Normal** platforms and **Slippery**  ice as well as **No Jump** snow that affects your friction and movement.
 * **Global Progression:** A persistent `Global` system that tracks your coins, deaths, and time across scene reloads.
-* **Interactive Environments:** Collectible coins and **Magic Wall** that only vanish once you’ve gathered enough loot.
+* **Interactive Environments:** Collectible coins and **Magic Wall** that only vanish once you’ve gathered enough loot and deadly **Mushrooms** that kill you.
 * **Particle Effects:** Custom pixel-art dust clouds for landing to give the movement "juice."
 * **Complete UI System:** Includes a Main Menu, Pause Menu (ESC), Controls Guide, and a Final Results Screen.
+* **Different Regions:** Whole map contains 5 various regions with different tiles and theme.
+* **Custom SFX:** Collecting coins sounds as well as awesome constant music in game.
 
 ---
 
@@ -29,15 +36,6 @@ In this challenge-driven platformer, you control a character with a unique **hol
 
 ---
 
-## Technical Details
-* **Engine:** Godot (GDExtension/GDScript)
-* **Architecture:** * Uses **Autoload (Singleton)** for global data management.
-    * **GPUParticles2D** for optimized pixel-art effects.
-    * **Signal-based UI** for decoupled communication between game objects and menus.
-    * **Custom TileData:** Leverages Godot's TileSet patterns to identify surface types.
-
----
-
 ## Getting Started
 1. Clone this repository.
 2. Open `project.godot` in **Godot 4.x**.
@@ -45,4 +43,4 @@ In this challenge-driven platformer, you control a character with a unique **hol
 
 ---
 
-*Created as a learning project in Godot Game Development with Brackeys youtube video help and usage of his assets*
+*Created as a Godot and game development learning project made with help from Brackeys youtube video and usage of his assets*
