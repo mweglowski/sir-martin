@@ -1,3 +1,5 @@
+![Game Header](assets/header.jpg)
+
 # ⚔ Sir Martin
 
 A precision-platformer built with **Godot 4.6.1** where every jump counts. Navigate slippery surfaces, collect coins to unlock magical barriers, and reach the Princess in the fastest time possible!
@@ -10,7 +12,7 @@ In this challenge-driven platformer, you control a character with a unique **hol
 ---
 
 ## Demo
-[![Watch game demo](https://img.youtube.com/vi/IVj-34CuNX4/maxresdefault.jpg)](https://youtu.be/IVj-34CuNX4)
+[![Watch game demo](assets/video-preview.jpg)](https://youtu.be/IVj-34CuNX4)
 
 ---
 
