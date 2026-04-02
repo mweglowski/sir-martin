@@ -23,6 +23,7 @@ In this challenge-driven platformer, you control a character with a unique **hol
 * **Complete UI System:** Includes a Main Menu, Pause Menu (ESC), Controls Guide, and a Final Results Screen.
 * **Different Regions:** Whole map contains 5 various regions with different tiles and theme.
 * **Custom SFX:** Collecting coins sounds as well as awesome constant music in game.
+* **Animations:** Animated player movement, jumping (like a flip) and rotating coins.
 
 ---
 
